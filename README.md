@@ -2,6 +2,8 @@ Time-it is a platform to set your tasks and remind yourself. In today's busy wor
 
 The site is developed with Bootstrap and hence compatible with multiple devices.
 
+You can view it live [here](http://projecttimeit.000webhostapp.com/) and schedule your tasks to get notified.
+
 #### How to Use?
 - The user registers himself on the website and logs in.
 - Then he has to set reminders according to his needs with proper details.
