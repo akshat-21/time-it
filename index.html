@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Time Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.2;
+      color: #00B8D4;
+  }
+  p {font-size: 20px;}
+  .bg-1 {
+      background-color: #263238; /* grey */
+      color: #00B8D4;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+      letter-spacing: 2.5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #0091EA !important;
+  }
+      .dotcom{
+  		color:#00B8D4;
+  }
+
+  .navbar-brand {
+  		font-size: 40px;
+  }
+  .jumbotron{
+  	margin: 0px;
+  		background: url(images/watch1.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+  		height: 600px;
+    opacity: .90;/* Here's where you set the opacity */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";/* Here's where you set the opacity for the bad browser */
+  }
+.form-group{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#fname{
+  height: 50px;
+  font-size: 16px;
+  }
+  #lname{
+  height: 50px;
+  font-size: 16px;
+  }#email{
+  height: 50px;
+  font-size: 16px;
+  }#number{
+  height: 50px;
+  font-size: 16px;
+  }#password{
+  height: 50px;
+  font-size: 16px;
+  }#password_confirmation{
+  height: 50px;
+  font-size: 16px;
+  }#register{
+  height: 50px;
+  font-size: 24px;
+  background-color: #00B8D4;
+  color: white;
+  margin:0 auto;
+  border:0px;
+  width:100%;
+  border-radius:4px; 
+  }
+
+    #loginmodal.jumbotron{
+  height: 300px;
+  background: transparent;
+  background-color: #263238;
+  opacity:1;
+  }
+  .modal-header{
+  border: none;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">Time<span class="dotcom">-It</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#login" data-toggle="modal">log in</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Footer -->
+<div class="jumbotron">
+<div class="container">
+  <form role="form" class="legacy-form" method="POST" action="">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                <div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="text" name="number" id="number" class="form-control" placeholder="Number">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Confirm Password">
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                <div class="form-group">
+                  <input type="button" name="submit" class="submit" id="register" value="Register">
+                </div>
+                </div>
+              </form>
+</div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Project by Sagar and Akshat</p>
+</footer>
+
+<div class="modal fade" id="login" role="dialog">
+  <div class="modal-dialog">
+  <div class="modeal-content">
+  <div class="modal-header">
+    <div class="jumbotron" id="loginmodal">
+<div class="container">
+  <form role="form" class="legacy-form" action="" method="POST" id="myform1">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                <div class="form-group">
+                  <input type="email" name="email" id="loginemail" class="form-control" placeholder="Email Address" required>
+                </div>
+                </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="password" name="password" id="loginpassword" class="form-control" placeholder="Password" required>
+                    </div>
+                  </div>
+                <div class="row" style="padding:15px">
+                  <div class="col-xs-6 col-sm-3 col-md-3  col-sm-offset-3 col-md-offset-3">
+                    <div class="form-group">
+                      <input type="button" value="Log In" class="submit" id="loginbtn" style="border-radius:4px;padding: 4px;border: 0px;color: white;background-color: #00B8D4">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="form-group">
+                      <input type="button" value="Cancel" class="submit" data-dismiss="modal" style="border-radius:4px;padding: 4px;border: 0px;color: white;background-color: #F44336">
+                    </div>
+                  </div>
+                </div>      
+            </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<script src="js/register.js"></script>
+</body>
+</html>

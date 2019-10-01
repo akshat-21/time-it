@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  	<script src="js/budget.js"></script>
+  	<script src="js/username.js"></script>
+  	<style type="text/css">
+
+  	body{
+      	background-color: #263238;
+      	color: #ffffff;
+	    font-family: Montserrat;
+	    line-height: 1.2;
+	    letter-spacing: 2.5px;
+	}
+
+	h2{
+	font-family: Montserrat;
+	      line-height: 1.2;
+	      letter-spacing: 2.5px;
+	}
+	#one.navbar {
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	    border: 0;
+	    border-radius: 0;
+	    margin-bottom: 0;
+	    font-size: 20px;
+	    letter-spacing: 2.5px;
+	    font: 20px Montserrat, sans-serif;
+	    line-height: 1.2;
+	    color: #00B8D4;
+	    position: relative;
+	}
+  	#one.navbar-header{
+    	display: inline-block;
+  	}
+  	#oneof.navbar-nav  li a:hover {
+    	color: #00B8D4 !important;
+  	}
+	#oneof.dotcom{
+  		color:#00B8D4;
+  	}
+
+  	#oneof.navbar-brand {
+  		font-size: 40px;
+  	}
+
+    #two.navbar {
+    	position: relative;
+    	margin-bottom: 0;
+      	background-color: #263238;
+      	z-index: 9999;
+      	border: 0;
+      	font-size: 14px !important;
+      	line-height: 1.42857143 !important;
+      	letter-spacing: 4px;
+      	border-radius: 0;
+      	font-family: Montserrat, sans-serif;
+  	}
+  	#two.navbar li a{
+      	color: #00B8D4 !important;
+  	}
+  	#two.affix{
+    	width: 100%;
+  	}
+  	#twoof.navbar-nav li a:hover/*, .navbar-nav li.active a */{
+      	color: #263238 !important;
+      	background-color: #FFFFFF !important;
+  	}
+  	#two.navbar-default .navbar-toggle {
+      	border-color: transparent;
+      	color: #00B8D4 !important;
+  	}
+  	#twoof.navbar-brand{
+      	font-size: 24px;
+        color: #00B8D4 !important;
+  	}
+    #twoof.dropdown-menu li a {
+      	background-color: #FFFFFF !important;
+	}
+  	#twoof.dropdown-menu li a:hover {
+      	color: #263238 !important;
+  	}
+  	#rem{
+  		position: relative;
+	}
+	select::-ms-expand {
+    	display: none;
+	}
+	select {
+		appearance: none;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+		text-indent: 1px;
+		text-overflow: '';
+		background: url("custom image") no-repeat right center;
+	}  
+	.form-group{
+		margin: 0px;
+		padding: 0px;
+		height: 70px;
+		font-size: 16px;
+	}
+	.btn span.glyphicon {         
+  		opacity: 0;       
+	}
+	.btn.active span.glyphicon {        
+  		opacity: 1;       
+	}
+	/*#three{
+		margin-top: 140px;
+		position: relative;
+	}*/
+	#table_body tr:hover {
+  		color: #00B8D4;
+	}
+  span {
+    cursor: pointer; 
+  }
+  	</style>	
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" id="one" role="navigation">
+  		<div class="container">
+    		<div class="navbar-header" id="one">
+      			<a class="navbar-brand" href="" id="oneof">Time<span class="dotcom" id="oneof">-It</span></a>
+    		</div>
+    		<div style="float:right;">
+      			<ul class="nav navbar-nav navbar-right" id="oneof">
+        			<li><a href="index.html">log out</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
+
+  	<nav class="navbar navbar-default navbar-lower" data-spy="affix" role="navigation" id="two">
+ 		<div class="container">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#twooftwo">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      	<a class="navbar-brand navbar-left" href="firstpage.html" id="twoof">Time Yourself</a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="twooftwo">
+      		<ul class="nav navbar-nav navbar-right" id="twoof">
+        		<li><a href="firstpage.html">HOME</a></li>
+        		<li  class="active" class="dropdown" id="twoof">
+          		<a class="dropdown-toggle" data-toggle="dropdown" href="">TIMETABLE
+          		<span class="caret"></span></a>
+          		<ul class="dropdown-menu" id="twoof">
+            		<li><a href="reminders.html">REMINDER</a></li>
+            		<li><a href="budget.html">BUDGET</a></li>
+          		</ul>
+        		</li>
+        		<li><a href="#services">SETTINGS</a></li>
+        		<li><a href="contactus.html">CONTACT</a></li>
+        		<li><a href="about.html">ABOUT</a></li>
+      		</ul>
+    	</div>
+  		</div>
+	</nav>
+	<div class="container" id="three">
+		<h2>Budget</h2>
+	</div>
+	<div class="container" id="rem">
+  	<div class="row">
+    	<div class="" id="p_list">
+      		<table class="table table-hover">
+        		<thead>
+          			<tr style="font-size: 20px;color: #00B8D4">
+			            <th width="48%">Particulars</th>
+			            <th width="48%">Expense</th>
+                  <th width="4%">Cancel</th>
+          			</tr>
+        		</thead>
+        		<tbody id="table_body">
+        		</tbody>
+        		<thead>
+        			<tr style="font-size: 20px;color: #00B8D4">
+			            <th width="48%"><input type="button" name="submit" class="submit" id="total" value="Total" style="color:#263238;"></th>
+			            <th width="48%"><p id="totalcalc"></p></th>
+                  <th width="4%"></th>
+          			</tr>
+        		</thead>
+      		</table>
+    	</div>
+  	</div>
+    </div>
+  	<br><br>
+  	<form class="form-horizontal" method="" action="" id="budegtform" style="position: relative;">
+	  	<div class="form-group">
+	      	<label class="col-sm-2 control-label">Particular :</label>
+	      	<div class="col-sm-6">
+	        	<input class="form-control" id="part" type="text" value="" placeholder="Enter the particular">
+	      	</div>
+	  	</div>
+	  	<div class="form-group">
+	      	<label class="col-sm-2 control-label">Amount :</label>
+	      	<div class="col-sm-6">
+	        	<input class="form-control" id="amount" type="number" value="" placeholder="Enter the amount">
+	      	</div>
+	  	</div>
+	  	<div class="form-group">
+      <label class="col-sm-2 control-label"></label>
+     		<input type="button" name="submit" class="submit" id="enter" value="Enter" style="color:#263238;">
+		</div>
+	</form>
+</body>
+</html>
