@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Firstpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+
+  body{
+      background-color: #263238;
+      color: #ffffff;
+      font-family: Montserrat;
+      line-height: 1.2;
+      letter-spacing: 2.5px;
+}
+#car.container{
+  position: relative;
+  padding-top: 200px;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+#works.container-fluid {
+    display: block;
+    position: relative;
+    padding-bottom: 60px;
+    top: 150px;
+    box-sizing: border-box;
+        max-width: 900px;
+        text-align: center;
+        margin: 0 auto;
+    clear: both;
+}
+@media screen and (max-width: 768px){
+#works.container-fluid .col-xs-12 {
+    margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+}
+}
+#works.row{
+  padding-bottom: 50px;
+}
+#works.col-xs-12 {
+    width: 100%;
+    position: relative;
+}
+#works.col-sm-4 {
+  width: 33.33333%;
+  position: relative;
+}
+  strong{
+    display: block;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  h1{
+    font-size: 36px;
+  }
+  #one.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+      letter-spacing: 2.5px;
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.2;
+      color: #00B8D4;
+  }
+    #one.navbar-header{
+    display: inline-block;
+  }
+  #oneof.navbar-nav  li a:hover {
+      color: #00B8D4 !important;
+  }
+  #oneof.dotcom{
+  		color:#00B8D4;
+  }
+
+  #oneof.navbar-brand {
+  		font-size: 40px;
+  }
+
+    #two.navbar {
+      margin-bottom: 0;
+      background-color: #263238;
+      z-index: 9999;
+      border: 0;
+      font-size: 14px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  #two.navbar li a{
+      color: #00B8D4 !important;
+           cursor: pointer;
+  }
+  #two.affix{
+    top:80px;
+    width: 100%;
+  }
+  #twoof.navbar-nav li a:hover/*, .navbar-nav li.active a */{
+      color: #263238 !important;
+      background-color: #FFFFFF !important;
+  }
+  #two.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #00B8D4 !important;
+  }
+  #twoof.navbar-brand{
+      font-size: 24px;
+           color: #00B8D4 !important;
+  }
+    #twoof.dropdown-menu li a {
+      background-color: #FFFFFF !important;
+  }
+  #twoof.dropdown-menu li a:hover {
+      color: #263238 !important;
+  }
+  </style>
+  </head>
+  <body>
+  	<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="one" role="navigation">
+  <div class="container">
+    <div class="navbar-header" id="one">
+      <a class="navbar-brand" href="" id="oneof">Time<span class="dotcom" id="oneof">-It</span></a>
+    </div>
+    <div style="float:right;">
+      <ul class="nav navbar-nav navbar-right" id="oneof">
+        <li><a href="index.html">log out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <nav class="navbar navbar-default navbar-lower" data-spy="affix" role="navigation" id="two">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#twooftwo">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-left" href="firstpage.html" id="twoof"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="twooftwo">
+      <ul class="nav navbar-nav navbar-right" id="twoof">
+        <li class="active"><a href="">HOME</a></li>
+        <li class="dropdown" id="twoof">
+          <a class="dropdown-toggle" data-toggle="dropdown">TIMETABLE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="twoof">
+            <li><a href="reminders.html">REMINDERS</a></li>
+            <li><a href="budget.html">BUDGET</a></li>
+          </ul>
+        </li>
+        <li><a href="">SETTINGS</a></li>
+        <li><a href="contactus.html">CONTACT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center" id="works">
+  <div class="row" id="works">
+   <h1>
+    Goodbye Timesheets. Hello Time<span class="dotcom" id="oneof">-It</span>.
+  </h1>
+</div>
+        <div class="col-xs-12 col-sm-4" id="works">
+          <img src="images/work.png" class="retina">
+          <strong>1. Focus on your work just like before</strong>
+        </div>
+        <div class="col-xs-12 col-sm-4" id="works">
+          <img src="images/track.png" class="retina">
+          <strong id="works">2. Time<span class="dotcom" id="oneof">-It</span> works in background</strong>
+        </div>
+        <div class="col-xs-12 col-sm-4" id="works">
+          <img src="images/log.png" class="retina">
+          <strong>3. Click,Confirm-Be on Time</strong>
+        </div>
+</div>
+<div class="container" id="car">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+  <div class="container text-center">
+  <h1 style="padding:15px;">How it works<br></h1>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <a href="images/first1.jpg"><img src="images/first1.jpg" alt="Chania" width="300" height="200"></a>
+      </div>
+
+      <div class="item">
+        <a href="images/first2.jpg"><img src="images/first2.jpg" alt="Chania" width="300" height="200"></a>
+      </div>
+    
+      <div class="item">
+        <a href="images/first3.jpg"><img src="images/first3.jpg" alt="Flower" width="300" height="200"></a>
+      </div>
+
+      <div class="item">
+        <a href="images/first4.jpg"><img src="images/first4.jpg" alt="Flower" width="300" height="200"></a>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="filler" style="min-height:200px"></div>
+  </div>
+</div>
+<script src="js/username.js"></script>
+  </body>
+  </html>
+  
